@@ -7,8 +7,36 @@ Si cette option est réglée à « forced-commands-only », les connexions de ro
 
 Si cette option est réglée à « no », root n'est pas autorisé à se connecter.
 
+#1.2  Exercice : Authentification par clef / G´en´eration de clefs
 
 C'est une mauvaise idée d'utiliser une passphrase car 
+
+sur cmder non connecté au ssh
+faire ssh-keygen pour récuperer clef ssh
+
+donc ajout manuellement de la clef dans le fichier authorized.keys
+
+
+#1.3  Exercice : Authentification par clef / Connection serveur
+
+cd /root
+mkdir .ssh
+nano authorized_keys
+copie de la clef
+
+ mv .ssh/Authorized_keys .ssh/authorized_keys
+  cat toto > .ssh/authorized_keys
+   cat .ssh/authorized_keys
+
+changement dans le fichier pour without-password
+reboot
+restart
+
+
+
+
+
+
 
 
 
