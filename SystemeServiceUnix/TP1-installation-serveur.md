@@ -1,7 +1,7 @@
-TP 01 : Installation Serveurs
+#TP 01 : Installation Serveurs
 
 
-1) Installation Machine virtuelle
+##1) Installation Machine virtuelle
 
 Avec VirtualBox création d'une machine Linus Debian stable 
 (version figée où seules les mises à jour sont des correctifs de sécurité)
@@ -17,7 +17,7 @@ Avec VirtualBox création d'une machine Linus Debian stable
  
  - (ne pas oublier d'enlever le mini.iso)
 
-2) Configuration SSH
+##2) Configuration SSH
 
 - pour la configuration
 
