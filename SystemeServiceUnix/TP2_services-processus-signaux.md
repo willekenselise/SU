@@ -139,7 +139,7 @@ root@serveur1:~# bash -x date.sh
 + sleep 1
 ^C
 
-**root@serveur1:~# bash -x date-toto.sh
+root@serveur1:~# bash -x date-toto.sh
 + true
 + sleep 1
 + echo -n ’toto ’
@@ -154,9 +154,35 @@ date: opérande supplémentaire « ago’ »
 Saisissez « date --help » pour plus d'informations.
 + true
 + sleep 1
-^C**
+^C
 
 
+-  ls | cat
+affiche les fichiers de type cat 
+- ls -l | cat > liste
+liste les fichiers du nom liste
+
+-ls -l | tee liste
+liste les fichiers contenu avec des informations tel que la date, l'heure de création, et les accès
+root@serveur1:~# ls -l | tee liste
+total 16
+-rwxr-xr-x 1 root root  71 13 sept. 18:46 date.sh
+-rw-r--r-- 1 root root  94 13 sept. 18:47 date-toto.sh
+-rw-r--r-- 1 root root 209 13 sept. 19:06 liste
+-rw-r--r-- 1 root root 567 13 sept. 16:50 toto
+
+
+
+
+-  ls -l | tee liste | wc -l
+affiche 5
+
+
+###  Journal système rsyslog
+
+installation de rsyslog avec apt install rsyslog
+
+PID est le 395
 
 
 
