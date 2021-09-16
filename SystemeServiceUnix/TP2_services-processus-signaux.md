@@ -15,6 +15,8 @@ sur cmder non connecté au ssh
 faire ssh-keygen pour récuperer clef ssh
 
 donc ajout manuellement de la clef dans le fichier authorized.keys
+https://user-images.githubusercontent.com/37480026/133572232-d37cd42b-b681-4ad5-9b31-2fdbc7e5d9a8.png
+![image](https://user-images.githubusercontent.com/37480026/133572313-154fd68a-b432-4ad5-882f-1cecfb2fe7aa.png)
 
 
 ## 1.3  Exercice : Authentification par clef / Connection serveur
