@@ -1,8 +1,8 @@
 package batailleb;
 
 public class Carte {
-	public Integer valeur;
-	public Integer couleur;
+	private Integer valeur;
+	private Integer couleur;
 	
 	
 	
