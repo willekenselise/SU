@@ -6,7 +6,7 @@ Si cette option est réglée à « without-password », l'authentification par m
 Si cette option est réglée à « forced-commands-only », les connexions de root sont autorisées avec une authentification par clef publique, mais seulement si l'option command est spécifiée (ce qui peut être utile pour effectuer des sauvegardes à distance même si les connexions de root sont normalement interdites). Toutes les autres méthodes d'authentification sont désactivées pour root.
 
 Si cette option est réglée à « no », root n'est pas autorisé à se connecter.
-## SEcure Shell : SSH
+## Secure Shell : SSH
 ### 1.2  Exercice : Authentification par clef / Génération de clefs
 
 C'est une mauvaise idée d'utiliser une passphrase car ce n'est pas assez sécurisé les personnes se connectant peuvent voir le mot de passe écrit. Il faut mieux utiliser une clef car même si les personnes peuvent la voir ils ne pourront pas l'utiliser.
@@ -96,10 +96,9 @@ systemd─┬─cron
         ├─systemd-logind
         ├─systemd-timesyn───{systemd-timesyn}
         └─systemd-udevd
- 
- top puis ?
- 
+  
  - le plus gros est  systemd 
+ systemd (pour « system daemon » : le démon du système) est un ensemble de programmes destiné à la gestion système, conçu pour le noyau Linux. Il permet le chargement en parallèle des services au démarrage, gère les services et essaie de réduire les appels aux scripts shell. Son but est de remplacer le démon init System V, appelé aussi SysVinit.
  
 UTIL.     PR  NI    VIRT    RES    SHR S  %CPU  %MEM    TEMPS+ COM.
 root      20   0   98200  10112   7768 S   0,0   1,0   0:02.60 systemd
@@ -122,6 +121,12 @@ nano date.sh
 #!/bin/sh
 while true; do sleep 1; echo -n ’date ’; date +%T; done
 
+// le while .. do permet de faire une loop
+// sleep delais de 1s
+// echo -n affiche sans passer à la ligne
+//focntion date pour récupérer la date
+// affiche la date sous format %T heure actuelle, (sur 24 heures) (hh:mm:ss)
+
 - pour executer bash -x name.sh
 
 root@serveur1:~# bash -x date.sh
@@ -137,7 +142,8 @@ root@serveur1:~# bash -x date.sh
 18:50:40
 + true
 + sleep 1
-^C
+
+
 
 root@serveur1:~# bash -x date-toto.sh
 + true
@@ -154,8 +160,9 @@ date: opérande supplémentaire « ago’ »
 Saisissez « date --help » pour plus d'informations.
 + true
 + sleep 1
-^C
 
+Tee : Lire depuis l'entrée standard et écrire sur la sortie standard et dans les fichiers
+Cat : Visualisation et concaténation de fichier
 
 -  ls | cat
 affiche les fichiers de type cat 
@@ -172,8 +179,6 @@ total 16
 -rw-r--r-- 1 root root 567 13 sept. 16:50 toto
 
 
-
-
 -  ls -l | tee liste | wc -l
 affiche 5
 
@@ -184,6 +189,16 @@ installation de rsyslog avec apt install rsyslog
 
 PID est le 395
 
+Les messages issus des services standards sont écrit : /var/log/messages
+
+le service cron permet de planifier des taches régulières. 
+
+tail -f 
+la commande "tail" permet de visionner les dernières ligne d'un fichier texte. par défault celui-ci affiche que les dix dernières ligne. cette outil est le plus souvent utilisé pour voir les fichiers log qui peuvent être très long.
+
+-f Au fur et à mesure que de nouvelles lignes sont écrites dans le journal, la console se mettra à jour avec les nouvelles lignes.
+
+Le fichier /etc/logrotate.conf possède les configurations et les options par défault de l'utilitaire Logrotate 
 
 
 
