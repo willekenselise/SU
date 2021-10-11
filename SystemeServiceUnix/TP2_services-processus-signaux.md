@@ -189,12 +189,12 @@ installation de rsyslog avec apt install rsyslog
 
 PID est le 395
 
-Les messages issus des services standards sont écrit : /var/log/messages
+Les messages issus des services standards sont écrits : /var/log/messages
 
 le service cron permet de planifier des taches régulières. 
 
 tail -f 
-la commande "tail" permet de visionner les dernières ligne d'un fichier texte. par défault celui-ci affiche que les dix dernières ligne. cette outil est le plus souvent utilisé pour voir les fichiers log qui peuvent être très long.
+la commande "tail" permet de visionner les dernières ligne d'un fichier texte. Par défault celui-ci affiche que les dix dernières ligne. Cet outil est le plus souvent utilisé pour voir les fichiers log qui peuvent être très long.
 
 -f Au fur et à mesure que de nouvelles lignes sont écrites dans le journal, la console se mettra à jour avec les nouvelles lignes.
 
