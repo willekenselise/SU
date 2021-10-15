@@ -22,6 +22,13 @@
 
 ### Argument type et droits
 
+![image](https://user-images.githubusercontent.com/37480026/137494008-24aba7b8-754c-4453-ac0c-7ae2ed42442b.png)
+
+root@serveur1:~# ./test-fichier.sh concat.sh
+Le fichier ./test-fichier.sh est un fichier ordinaire
+concat.sh est accessible par root  en écriture executable
+
+### Afficher le contenu d'un répertoire
 
 
 
