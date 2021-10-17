@@ -36,4 +36,23 @@ concat.sh est accessible par root  en écriture executable
 
  ### Lister les utilisateurs
  
+![image](https://user-images.githubusercontent.com/37480026/137632727-8672990b-e039-4945-aa23-397ba7fe8210.png)
+
+### Lecture au clavier
+
+- On peut quitter more avec la touche q
+- On avance d'une ligne en appuyant sur enter
+- On avance d'une page en appuyant sur espace
+- On recule d'une page avec b ou ctrl + B
+- On cherche une chaîne de caractères avec regular expression
+
+![image](https://user-images.githubusercontent.com/37480026/137633516-e15366a1-b139-48f2-b1b4-95a4c1f47248.png)
+
+
+### Appréciation
+![image](https://user-images.githubusercontent.com/37480026/137633109-f0f62205-f853-4a9b-ad67-8b5aaed95e55.png)
+![image](https://user-images.githubusercontent.com/37480026/137633123-922077f7-d827-422a-9bdc-6078b8f073f3.png)
+
+
+
 
