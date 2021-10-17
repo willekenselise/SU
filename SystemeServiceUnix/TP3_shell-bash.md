@@ -30,5 +30,10 @@ concat.sh est accessible par root  en écriture executable
 
 ### Afficher le contenu d'un répertoire
 
+![image](https://user-images.githubusercontent.com/37480026/137632213-4603ffe0-ad9a-40b1-9c03-e9cd0cbe3e7d.png)
 
+![image](https://user-images.githubusercontent.com/37480026/137632204-bf585d5e-af41-4e64-a9f6-52e3be568fec.png)
+
+ ### Lister les utilisateurs
+ 
 
